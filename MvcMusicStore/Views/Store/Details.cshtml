@@ -16,15 +16,15 @@
         @Model.Genre.Name
     </p>
     <p>
-        <em>Artist:</em>
+        <em>Artiste:</em>
         @Model.Artist.Name
     </p>
     <p>
-        <em>Price:</em>
+        <em>Prix:</em>
         @String.Format("{0:F}", Model.Price)
     </p>
     <p class="button">
-        @Html.ActionLink("Add to cart", "AddToCart", 
+        @Html.ActionLink("Ajouter au panier", "AddToCart", 
         "ShoppingCart", new { id = Model.AlbumId }, "")
     </p>
 </div>

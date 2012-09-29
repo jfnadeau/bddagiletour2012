@@ -1,7 +1,7 @@
 ﻿@model MvcMusicStore.Models.Album
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Créer";
 }
 
 <h2>Create</h2>
@@ -23,7 +23,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.ArtistId, "Artist")
+            @Html.LabelFor(model => model.ArtistId, "Artiste")
         </div>
         <div class="editor-field">
             @Html.DropDownList("ArtistId", String.Empty)
@@ -55,11 +55,11 @@
         </div>
 
         <p>
-            <input type="submit" value="Create" />
+            <input type="submit" value="Créer" />
         </p>
     </fieldset>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Retour à la liste", "Index")
 </div>

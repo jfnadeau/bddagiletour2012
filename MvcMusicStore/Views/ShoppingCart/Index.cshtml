@@ -1,6 +1,6 @@
 ﻿@model MvcMusicStore.ViewModels.ShoppingCartViewModel
 @{
-    ViewBag.Title = "Shopping Cart";
+    ViewBag.Title = "Panier";
 }
 <script src="/Scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -25,7 +25,7 @@
 
                         $('#cart-total').text(data.CartTotal);
                         $('#update-message').text(data.Message);
-                        $('#cart-status').text('Cart (' + data.CartCount + ')');
+                        $('#cart-status').text('Panier (' + data.CartCount + ')');
                     });
             }
         });
@@ -47,27 +47,27 @@
 
         $('#cart-total').text(data.CartTotal);
         $('#update-message').text(data.Message);
-        $('#cart-status').text('Cart (' + data.CartCount + ')');
+        $('#cart-status').text('Panier (' + data.CartCount + ')');
     }
 </script>
 <h3>
-    <em>Review</em> your cart:
+    <em>Revue</em> du panier:
 </h3>
 <p class="button">
-    @Html.ActionLink("Checkout >>", "AddressAndPayment", "Checkout")
+    @Html.ActionLink("Commander >>", "AddressAndPayment", "Checkout")
 </p>
 <div id="update-message">
 </div>
 <table>
     <tr>
         <th>
-            Album Name
+            Nom Album
         </th>
         <th>
-            Price (each)
+            Prix (chacun)
         </th>
         <th>
-            Quantity
+            Quantité
         </th>
         <th></th>
     </tr>
@@ -84,7 +84,7 @@
                 @item.Count
             </td>
             <td>
-                <a href="#" class="RemoveLink" data-id="@item.RecordId">Remove from cart</a>
+                <a href="#" class="RemoveLink" data-id="@item.RecordId">Supprimer du panier</a>
             </td>
         </tr>
     }

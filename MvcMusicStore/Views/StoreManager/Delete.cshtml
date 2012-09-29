@@ -1,21 +1,21 @@
 ﻿@model MvcMusicStore.Models.Album
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Supprimer";
 }
 
-<h2>Delete Confirmation</h2>
+<h2>Confirmation de suppression</h2>
 
-<p>Are you sure you want to delete the album titled 
+<p>Êtes-vous sur de vouloir supprimer
    <strong>@Model.Title</strong>?
 </p>
 
 @using (Html.BeginForm()) {
     <p>
-        <input type="submit" value="Delete" />
+        <input type="submit" value="Supprimer" />
     </p>
     <p>
-        @Html.ActionLink("Back to List", "Index")
+        @Html.ActionLink("Retour à la liste", "Index")
     </p>
 
 }

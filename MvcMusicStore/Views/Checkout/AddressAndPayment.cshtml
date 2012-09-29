@@ -1,7 +1,7 @@
 ﻿@model MvcMusicStore.Models.Order
 
 @{
-    ViewBag.Title = "Address And Payment";
+    ViewBag.Title = "Adresse et paiement";
 }
 
 <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
@@ -9,23 +9,24 @@
 
 @using (Html.BeginForm()) {
     
-    <h2>Address And Payment</h2>
+    <h2>Adresse et paiement</h2>
     <fieldset>
-        <legend>Shipping Information</legend>
+        <legend>Informations d'envoie</legend>
 
         @Html.EditorForModel()
     </fieldset>
     <fieldset>
-        <legend>Payment</legend>
-        <p>We're running a promotion: all music is free with the promo code: "FREE"</p>
+        <legend>Paiement</legend>
+        <p>Nous avons une promotion: toute la musique est grauite avec le code de promo: "FREE"
+        </p>
 
         <div class="editor-label">
-            @Html.Label("Promo Code")
+            @Html.Label("Code Promo")
         </div>
         <div class="editor-field">
             @Html.TextBox("PromoCode")
         </div>
     </fieldset>
     
-    <input type="submit" value="Submit Order" />
+    <input type="submit" value="Soumettre" />
 }

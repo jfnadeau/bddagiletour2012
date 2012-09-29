@@ -14,19 +14,19 @@ namespace MvcMusicStore.Models
         [DisplayName("Genre")]
         public int GenreId { get; set; }
 
-        [DisplayName("Artist")]
+        [DisplayName("Artiste")]
         public int ArtistId { get; set; }
 
-        [Required(ErrorMessage = "An Album Title is required")]
+        [Required(ErrorMessage = "Un titre d'album est requis")]
         [StringLength(160)]
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "Price is required")]
+        [Required(ErrorMessage = "Le prix est requis")]
         [Range(0.01, 100.00,
-            ErrorMessage = "Price must be between 0.01 and 100.00")]
+            ErrorMessage = "Le prix doit être entre 0.01 et 100.00")]
         public decimal Price { get; set; }
 
-        [DisplayName("Album Art URL")]
+        [DisplayName("Couverture URL")]
         [StringLength(1024)]
         public string AlbumArtUrl { get; set; }
 
