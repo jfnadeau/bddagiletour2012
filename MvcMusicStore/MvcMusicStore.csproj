@@ -86,6 +86,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201209180014083_InitialCreate.cs" />
+    <Compile Include="Migrations\201209180014083_InitialCreate.Designer.cs">
+      <DependentUpon>201209180014083_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Album.cs" />
@@ -258,6 +262,11 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\bddagiletour - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\bddagiletour - Web Deploy.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201209180014083_InitialCreate.resx">
+      <DependentUpon>201209180014083_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
