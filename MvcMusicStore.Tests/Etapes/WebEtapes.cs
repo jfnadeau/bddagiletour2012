@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using MvcMusicStore.Tests.Pages;
+﻿using MvcMusicStore.Tests.Pages;
 using MvcMusicStore.Tests.WebDriver;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 
 namespace MvcMusicStore.Tests.Etapes
 {
-
     [Binding]
     public class WebEtapes
     {

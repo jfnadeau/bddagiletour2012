@@ -30,7 +30,7 @@ namespace MvcMusicStore.Tests.Pages
 
         protected override bool EvaluateLoadedStatus()
         {
-            return _webDriver.Title == "Adresse et paiement";
+            return _webDriver.Url.Contains("/Checkout/");
         }
     }
 }

@@ -95,7 +95,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WebDriver\IEDriverServer.exe">
+    <Content Include="IEDriverServer.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
